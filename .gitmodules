@@ -1,0 +1,3 @@
+[submodule "Vendor/RecastDetour"]
+	path = Vendor/RecastDetour
+	url = https://Slin@github.com/memononen/recastnavigation.git
