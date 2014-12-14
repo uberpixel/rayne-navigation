@@ -6,8 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D5D0F4031A3DFD3A00665D3B /* RNNNavigationWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4011A3DFD3A00665D3B /* RNNNavigationWorld.cpp */; };
+		D5D0F4041A3DFD3A00665D3B /* RNNNavigationWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */; };
+		D5D0F4071A3E040400665D3B /* RNNMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4051A3E040400665D3B /* RNNMesh.cpp */; };
+		D5D0F4081A3E040400665D3B /* RNNMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D0F4061A3E040400665D3B /* RNNMesh.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D5D0F3F91A3DFCEA00665D3B /* librayne-navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "librayne-navigation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D0F4011A3DFD3A00665D3B /* RNNNavigationWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RNNNavigationWorld.cpp; sourceTree = "<group>"; };
+		D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNNavigationWorld.h; sourceTree = "<group>"; };
+		D5D0F4051A3E040400665D3B /* RNNMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RNNMesh.cpp; sourceTree = "<group>"; };
+		D5D0F4061A3E040400665D3B /* RNNMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNMesh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +35,7 @@
 		D5D0F3F01A3DFCEA00665D3B = {
 			isa = PBXGroup;
 			children = (
+				D5D0F4001A3DFD0200665D3B /* Classes */,
 				D5D0F3FA1A3DFCEA00665D3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,6 +48,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D5D0F4001A3DFD0200665D3B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F4011A3DFD3A00665D3B /* RNNNavigationWorld.cpp */,
+				D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */,
+				D5D0F4051A3E040400665D3B /* RNNMesh.cpp */,
+				D5D0F4061A3E040400665D3B /* RNNMesh.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -43,6 +66,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D0F4081A3E040400665D3B /* RNNMesh.h in Headers */,
+				D5D0F4041A3DFD3A00665D3B /* RNNNavigationWorld.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D0F4031A3DFD3A00665D3B /* RNNNavigationWorld.cpp in Sources */,
+				D5D0F4071A3E040400665D3B /* RNNMesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

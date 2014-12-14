@@ -1,0 +1,1 @@
+Navigation module, based on Recast and Detour. This module allows to generate navigation meshes from Rayne models and use them for navigation.

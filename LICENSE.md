@@ -1,0 +1,1 @@
+rayne-navigation is released under the MIT license, Recast & Detour is licensed under ZLib license.
