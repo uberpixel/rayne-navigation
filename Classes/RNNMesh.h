@@ -18,11 +18,99 @@
 #ifndef __rayne_navigation__RNNMesh__
 #define __rayne_navigation__RNNMesh__
 
+#include <Rayne/Rayne.h>
+
+#include "Recast.h"
+#include "DetourNavMesh.h"
+#include "DetourNavMeshBuilder.h"
+#include "RecastDump.h"
+
 namespace RN
 {
 	namespace navigation
 	{
+		/// Recast build context.
+		class BuildContext : public rcContext
+		{
+		public:
+			BuildContext();
+			
+		protected:
+			virtual void doLog(const rcLogCategory category, const char* msg, const int len);
+		};
 		
+		struct FileIO : public duFileIO
+		{
+			FileIO(const char *path)
+			{
+				_file = fopen(path, "wb");
+			}
+	
+			virtual ~FileIO()
+			{
+				fclose(_file);
+			}
+		
+			virtual bool isWriting() const { return true; }
+			virtual bool isReading() const { return false; }
+			virtual bool write(const void* ptr, const size_t size) { fwrite(ptr, size, 1, _file); return true; }
+			virtual bool read(void* ptr, const size_t size) { return false; }
+			
+			FILE *_file;
+		};
+		
+		class Mesh : public RN::Object
+		{
+		public:
+			enum PartitionType
+			{
+				Watershed,
+				Monotone,
+				Layers,
+			};
+			
+			Mesh();
+			Mesh(RN::Model *model);
+			~Mesh();
+			
+			bool GenerateFromModel(RN::Model *model);
+			bool GenerateFromModels(RN::Array *models);
+			
+			dtNavMesh *GetDetourNavigationMesh();
+			
+			void DumpToOBJ(const char *path);
+			
+			float _cellSize;
+			float _cellHeight;
+			float _agentHeight;
+			float _agentRadius;
+			float _agentMaxClimb;
+			float _agentMaxSlope;
+			float _regionMinSize;
+			float _regionMergeSize;
+			float _edgeMaxLen;
+			float _edgeMaxError;
+			float _vertsPerPoly;
+			float _detailSampleDist;
+			float _detailSampleMaxError;
+			
+		private:
+			void Initialize();
+			void Cleanup();
+			
+			PartitionType _partitionType;
+			
+			rcPolyMesh* _polyMesh;
+			rcConfig _recastConfig;
+			rcPolyMeshDetail* _polyMeshDetail;
+			
+			dtNavMesh* _navigationMesh;
+			
+			/*status = _navigationQuery->init(_navigationMesh, 2048);
+			dtNavMeshQuery *_navigationQuery;*/
+			
+			RNDeclareMeta(Mesh)
+		};
 	}
 }
 

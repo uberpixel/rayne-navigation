@@ -21,6 +21,21 @@ namespace RN
 {
 	namespace navigation
 	{
+		RNDefineSingleton(NavigationWorld)
 		
+		NavigationWorld::NavigationWorld()
+		{
+			
+		}
+		
+		NavigationWorld::~NavigationWorld()
+		{
+			
+		}
+		
+		void NavigationWorld::SetNavigationMesh(Mesh *mesh)
+		{
+			
+		}
 	}
 }

@@ -18,11 +18,25 @@
 #ifndef __rayne_navigation__RNNNavigationWorld__
 #define __rayne_navigation__RNNNavigationWorld__
 
+#include <Rayne/Rayne.h>
+
+#include "RNNMesh.h"
+
 namespace RN
 {
 	namespace navigation
 	{
-		
+		class NavigationWorld : public INonConstructingSingleton<NavigationWorld>
+		{
+		public:
+			NavigationWorld();
+			~NavigationWorld();
+			
+			void SetNavigationMesh(Mesh *mesh);
+			
+		private:
+			RNDeclareSingleton(NavigationWorld)
+		};
 	}
 }
 

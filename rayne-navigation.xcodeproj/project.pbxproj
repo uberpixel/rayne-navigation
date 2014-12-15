@@ -7,18 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5CF0DCE1A3E58260059E3FA /* DebugDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DCA1A3E58170059E3FA /* DebugDraw.cpp */; };
+		D5CF0DCF1A3E58260059E3FA /* DetourDebugDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DCB1A3E58170059E3FA /* DetourDebugDraw.cpp */; };
+		D5CF0DD01A3E58260059E3FA /* RecastDebugDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DCC1A3E58170059E3FA /* RecastDebugDraw.cpp */; };
+		D5CF0DD11A3E58260059E3FA /* RecastDump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DCD1A3E58170059E3FA /* RecastDump.cpp */; };
+		D5CF0DD91A3E59040059E3FA /* DetourTileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CF0DD41A3E59040059E3FA /* DetourTileCache.h */; };
+		D5CF0DDA1A3E59040059E3FA /* DetourTileCacheBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CF0DD51A3E59040059E3FA /* DetourTileCacheBuilder.h */; };
+		D5CF0DDB1A3E59040059E3FA /* DetourTileCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DD71A3E59040059E3FA /* DetourTileCache.cpp */; };
+		D5CF0DDC1A3E59040059E3FA /* DetourTileCacheBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0DD81A3E59040059E3FA /* DetourTileCacheBuilder.cpp */; };
 		D5D0F4031A3DFD3A00665D3B /* RNNNavigationWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4011A3DFD3A00665D3B /* RNNNavigationWorld.cpp */; };
 		D5D0F4041A3DFD3A00665D3B /* RNNNavigationWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */; };
 		D5D0F4071A3E040400665D3B /* RNNMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4051A3E040400665D3B /* RNNMesh.cpp */; };
 		D5D0F4081A3E040400665D3B /* RNNMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D0F4061A3E040400665D3B /* RNNMesh.h */; };
+		D5D0F43B1A3E3E2E00665D3B /* Recast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4301A3E096200665D3B /* Recast.cpp */; };
+		D5D0F43C1A3E3E2E00665D3B /* RecastAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4311A3E096200665D3B /* RecastAlloc.cpp */; };
+		D5D0F43D1A3E3E2E00665D3B /* RecastArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4321A3E096200665D3B /* RecastArea.cpp */; };
+		D5D0F43E1A3E3E2E00665D3B /* RecastContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4331A3E096200665D3B /* RecastContour.cpp */; };
+		D5D0F43F1A3E3E2E00665D3B /* RecastFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4341A3E096200665D3B /* RecastFilter.cpp */; };
+		D5D0F4401A3E3E2E00665D3B /* RecastLayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4351A3E096200665D3B /* RecastLayers.cpp */; };
+		D5D0F4411A3E3E2E00665D3B /* RecastMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4361A3E096200665D3B /* RecastMesh.cpp */; };
+		D5D0F4421A3E3E2E00665D3B /* RecastMeshDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4371A3E096200665D3B /* RecastMeshDetail.cpp */; };
+		D5D0F4431A3E3E2E00665D3B /* RecastRasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4381A3E096200665D3B /* RecastRasterization.cpp */; };
+		D5D0F4441A3E3E2E00665D3B /* RecastRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4391A3E096200665D3B /* RecastRegion.cpp */; };
+		D5D0F4451A3E3E3800665D3B /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4151A3E094B00665D3B /* DetourAlloc.cpp */; };
+		D5D0F4461A3E3E3800665D3B /* DetourCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4161A3E094B00665D3B /* DetourCommon.cpp */; };
+		D5D0F4471A3E3E3800665D3B /* DetourNavMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4171A3E094B00665D3B /* DetourNavMesh.cpp */; };
+		D5D0F4481A3E3E3800665D3B /* DetourNavMeshBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4181A3E094B00665D3B /* DetourNavMeshBuilder.cpp */; };
+		D5D0F4491A3E3E3800665D3B /* DetourNavMeshQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F4191A3E094B00665D3B /* DetourNavMeshQuery.cpp */; };
+		D5D0F44A1A3E3E3800665D3B /* DetourNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F41A1A3E094B00665D3B /* DetourNode.cpp */; };
+		D5D0F44D1A3E4C8100665D3B /* RNNPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D0F44B1A3E4C8100665D3B /* RNNPath.cpp */; };
+		D5D0F44E1A3E4C8100665D3B /* RNNPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D0F44C1A3E4C8100665D3B /* RNNPath.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5CF0DC51A3E58170059E3FA /* DebugDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugDraw.h; sourceTree = "<group>"; };
+		D5CF0DC61A3E58170059E3FA /* DetourDebugDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourDebugDraw.h; sourceTree = "<group>"; };
+		D5CF0DC71A3E58170059E3FA /* RecastDebugDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecastDebugDraw.h; sourceTree = "<group>"; };
+		D5CF0DC81A3E58170059E3FA /* RecastDump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecastDump.h; sourceTree = "<group>"; };
+		D5CF0DCA1A3E58170059E3FA /* DebugDraw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DebugDraw.cpp; sourceTree = "<group>"; };
+		D5CF0DCB1A3E58170059E3FA /* DetourDebugDraw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourDebugDraw.cpp; sourceTree = "<group>"; };
+		D5CF0DCC1A3E58170059E3FA /* RecastDebugDraw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastDebugDraw.cpp; sourceTree = "<group>"; };
+		D5CF0DCD1A3E58170059E3FA /* RecastDump.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastDump.cpp; sourceTree = "<group>"; };
+		D5CF0DD41A3E59040059E3FA /* DetourTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourTileCache.h; sourceTree = "<group>"; };
+		D5CF0DD51A3E59040059E3FA /* DetourTileCacheBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourTileCacheBuilder.h; sourceTree = "<group>"; };
+		D5CF0DD71A3E59040059E3FA /* DetourTileCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourTileCache.cpp; sourceTree = "<group>"; };
+		D5CF0DD81A3E59040059E3FA /* DetourTileCacheBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourTileCacheBuilder.cpp; sourceTree = "<group>"; };
 		D5D0F3F91A3DFCEA00665D3B /* librayne-navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "librayne-navigation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D0F4011A3DFD3A00665D3B /* RNNNavigationWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RNNNavigationWorld.cpp; sourceTree = "<group>"; };
 		D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNNavigationWorld.h; sourceTree = "<group>"; };
 		D5D0F4051A3E040400665D3B /* RNNMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RNNMesh.cpp; sourceTree = "<group>"; };
 		D5D0F4061A3E040400665D3B /* RNNMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNMesh.h; sourceTree = "<group>"; };
+		D5D0F40B1A3E094B00665D3B /* DetourAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourAlloc.h; sourceTree = "<group>"; };
+		D5D0F40C1A3E094B00665D3B /* DetourAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourAssert.h; sourceTree = "<group>"; };
+		D5D0F40D1A3E094B00665D3B /* DetourCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourCommon.h; sourceTree = "<group>"; };
+		D5D0F40E1A3E094B00665D3B /* DetourMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourMath.h; sourceTree = "<group>"; };
+		D5D0F40F1A3E094B00665D3B /* DetourNavMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourNavMesh.h; sourceTree = "<group>"; };
+		D5D0F4101A3E094B00665D3B /* DetourNavMeshBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshBuilder.h; sourceTree = "<group>"; };
+		D5D0F4111A3E094B00665D3B /* DetourNavMeshQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshQuery.h; sourceTree = "<group>"; };
+		D5D0F4121A3E094B00665D3B /* DetourNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourNode.h; sourceTree = "<group>"; };
+		D5D0F4131A3E094B00665D3B /* DetourStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourStatus.h; sourceTree = "<group>"; };
+		D5D0F4151A3E094B00665D3B /* DetourAlloc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourAlloc.cpp; sourceTree = "<group>"; };
+		D5D0F4161A3E094B00665D3B /* DetourCommon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCommon.cpp; sourceTree = "<group>"; };
+		D5D0F4171A3E094B00665D3B /* DetourNavMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMesh.cpp; sourceTree = "<group>"; };
+		D5D0F4181A3E094B00665D3B /* DetourNavMeshBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshBuilder.cpp; sourceTree = "<group>"; };
+		D5D0F4191A3E094B00665D3B /* DetourNavMeshQuery.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshQuery.cpp; sourceTree = "<group>"; };
+		D5D0F41A1A3E094B00665D3B /* DetourNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNode.cpp; sourceTree = "<group>"; };
+		D5D0F41D1A3E095500665D3B /* DetourCrowd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourCrowd.h; sourceTree = "<group>"; };
+		D5D0F41E1A3E095500665D3B /* DetourLocalBoundary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourLocalBoundary.h; sourceTree = "<group>"; };
+		D5D0F41F1A3E095500665D3B /* DetourObstacleAvoidance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourObstacleAvoidance.h; sourceTree = "<group>"; };
+		D5D0F4201A3E095500665D3B /* DetourPathCorridor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourPathCorridor.h; sourceTree = "<group>"; };
+		D5D0F4211A3E095500665D3B /* DetourPathQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourPathQueue.h; sourceTree = "<group>"; };
+		D5D0F4221A3E095500665D3B /* DetourProximityGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetourProximityGrid.h; sourceTree = "<group>"; };
+		D5D0F4241A3E095500665D3B /* DetourCrowd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCrowd.cpp; sourceTree = "<group>"; };
+		D5D0F4251A3E095500665D3B /* DetourLocalBoundary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourLocalBoundary.cpp; sourceTree = "<group>"; };
+		D5D0F4261A3E095500665D3B /* DetourObstacleAvoidance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourObstacleAvoidance.cpp; sourceTree = "<group>"; };
+		D5D0F4271A3E095500665D3B /* DetourPathCorridor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourPathCorridor.cpp; sourceTree = "<group>"; };
+		D5D0F4281A3E095500665D3B /* DetourPathQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourPathQueue.cpp; sourceTree = "<group>"; };
+		D5D0F4291A3E095500665D3B /* DetourProximityGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DetourProximityGrid.cpp; sourceTree = "<group>"; };
+		D5D0F42C1A3E096200665D3B /* Recast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recast.h; sourceTree = "<group>"; };
+		D5D0F42D1A3E096200665D3B /* RecastAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecastAlloc.h; sourceTree = "<group>"; };
+		D5D0F42E1A3E096200665D3B /* RecastAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecastAssert.h; sourceTree = "<group>"; };
+		D5D0F4301A3E096200665D3B /* Recast.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recast.cpp; sourceTree = "<group>"; };
+		D5D0F4311A3E096200665D3B /* RecastAlloc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastAlloc.cpp; sourceTree = "<group>"; };
+		D5D0F4321A3E096200665D3B /* RecastArea.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastArea.cpp; sourceTree = "<group>"; };
+		D5D0F4331A3E096200665D3B /* RecastContour.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastContour.cpp; sourceTree = "<group>"; };
+		D5D0F4341A3E096200665D3B /* RecastFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastFilter.cpp; sourceTree = "<group>"; };
+		D5D0F4351A3E096200665D3B /* RecastLayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastLayers.cpp; sourceTree = "<group>"; };
+		D5D0F4361A3E096200665D3B /* RecastMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMesh.cpp; sourceTree = "<group>"; };
+		D5D0F4371A3E096200665D3B /* RecastMeshDetail.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMeshDetail.cpp; sourceTree = "<group>"; };
+		D5D0F4381A3E096200665D3B /* RecastRasterization.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRasterization.cpp; sourceTree = "<group>"; };
+		D5D0F4391A3E096200665D3B /* RecastRegion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRegion.cpp; sourceTree = "<group>"; };
+		D5D0F44B1A3E4C8100665D3B /* RNNPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RNNPath.cpp; sourceTree = "<group>"; };
+		D5D0F44C1A3E4C8100665D3B /* RNNPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNPath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +112,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5CF0DC31A3E58170059E3FA /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DC41A3E58170059E3FA /* Include */,
+				D5CF0DC91A3E58170059E3FA /* Source */,
+			);
+			name = DebugUtils;
+			path = Vendor/RecastDetour/DebugUtils;
+			sourceTree = "<group>";
+		};
+		D5CF0DC41A3E58170059E3FA /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DC51A3E58170059E3FA /* DebugDraw.h */,
+				D5CF0DC61A3E58170059E3FA /* DetourDebugDraw.h */,
+				D5CF0DC71A3E58170059E3FA /* RecastDebugDraw.h */,
+				D5CF0DC81A3E58170059E3FA /* RecastDump.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		D5CF0DC91A3E58170059E3FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DCA1A3E58170059E3FA /* DebugDraw.cpp */,
+				D5CF0DCB1A3E58170059E3FA /* DetourDebugDraw.cpp */,
+				D5CF0DCC1A3E58170059E3FA /* RecastDebugDraw.cpp */,
+				D5CF0DCD1A3E58170059E3FA /* RecastDump.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5CF0DD21A3E59040059E3FA /* DetourTileCache */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DD31A3E59040059E3FA /* Include */,
+				D5CF0DD61A3E59040059E3FA /* Source */,
+			);
+			name = DetourTileCache;
+			path = Vendor/RecastDetour/DetourTileCache;
+			sourceTree = "<group>";
+		};
+		D5CF0DD31A3E59040059E3FA /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DD41A3E59040059E3FA /* DetourTileCache.h */,
+				D5CF0DD51A3E59040059E3FA /* DetourTileCacheBuilder.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		D5CF0DD61A3E59040059E3FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DD71A3E59040059E3FA /* DetourTileCache.cpp */,
+				D5CF0DD81A3E59040059E3FA /* DetourTileCacheBuilder.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		D5D0F3F01A3DFCEA00665D3B = {
 			isa = PBXGroup;
 			children = (
+				D5D0F43A1A3E098500665D3B /* Vendor */,
 				D5D0F4001A3DFD0200665D3B /* Classes */,
 				D5D0F3FA1A3DFCEA00665D3B /* Products */,
 			);
@@ -55,8 +196,134 @@
 				D5D0F4021A3DFD3A00665D3B /* RNNNavigationWorld.h */,
 				D5D0F4051A3E040400665D3B /* RNNMesh.cpp */,
 				D5D0F4061A3E040400665D3B /* RNNMesh.h */,
+				D5D0F44B1A3E4C8100665D3B /* RNNPath.cpp */,
+				D5D0F44C1A3E4C8100665D3B /* RNNPath.h */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5D0F4091A3E094B00665D3B /* Detour */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F40A1A3E094B00665D3B /* Include */,
+				D5D0F4141A3E094B00665D3B /* Source */,
+			);
+			name = Detour;
+			path = Vendor/RecastDetour/Detour;
+			sourceTree = "<group>";
+		};
+		D5D0F40A1A3E094B00665D3B /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F40B1A3E094B00665D3B /* DetourAlloc.h */,
+				D5D0F40C1A3E094B00665D3B /* DetourAssert.h */,
+				D5D0F40D1A3E094B00665D3B /* DetourCommon.h */,
+				D5D0F40E1A3E094B00665D3B /* DetourMath.h */,
+				D5D0F40F1A3E094B00665D3B /* DetourNavMesh.h */,
+				D5D0F4101A3E094B00665D3B /* DetourNavMeshBuilder.h */,
+				D5D0F4111A3E094B00665D3B /* DetourNavMeshQuery.h */,
+				D5D0F4121A3E094B00665D3B /* DetourNode.h */,
+				D5D0F4131A3E094B00665D3B /* DetourStatus.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		D5D0F4141A3E094B00665D3B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F4151A3E094B00665D3B /* DetourAlloc.cpp */,
+				D5D0F4161A3E094B00665D3B /* DetourCommon.cpp */,
+				D5D0F4171A3E094B00665D3B /* DetourNavMesh.cpp */,
+				D5D0F4181A3E094B00665D3B /* DetourNavMeshBuilder.cpp */,
+				D5D0F4191A3E094B00665D3B /* DetourNavMeshQuery.cpp */,
+				D5D0F41A1A3E094B00665D3B /* DetourNode.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5D0F41B1A3E095500665D3B /* DetourCrowd */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F41C1A3E095500665D3B /* Include */,
+				D5D0F4231A3E095500665D3B /* Source */,
+			);
+			name = DetourCrowd;
+			path = Vendor/RecastDetour/DetourCrowd;
+			sourceTree = "<group>";
+		};
+		D5D0F41C1A3E095500665D3B /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F41D1A3E095500665D3B /* DetourCrowd.h */,
+				D5D0F41E1A3E095500665D3B /* DetourLocalBoundary.h */,
+				D5D0F41F1A3E095500665D3B /* DetourObstacleAvoidance.h */,
+				D5D0F4201A3E095500665D3B /* DetourPathCorridor.h */,
+				D5D0F4211A3E095500665D3B /* DetourPathQueue.h */,
+				D5D0F4221A3E095500665D3B /* DetourProximityGrid.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		D5D0F4231A3E095500665D3B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F4241A3E095500665D3B /* DetourCrowd.cpp */,
+				D5D0F4251A3E095500665D3B /* DetourLocalBoundary.cpp */,
+				D5D0F4261A3E095500665D3B /* DetourObstacleAvoidance.cpp */,
+				D5D0F4271A3E095500665D3B /* DetourPathCorridor.cpp */,
+				D5D0F4281A3E095500665D3B /* DetourPathQueue.cpp */,
+				D5D0F4291A3E095500665D3B /* DetourProximityGrid.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5D0F42A1A3E096200665D3B /* Recast */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F42B1A3E096200665D3B /* Include */,
+				D5D0F42F1A3E096200665D3B /* Source */,
+			);
+			name = Recast;
+			path = Vendor/RecastDetour/Recast;
+			sourceTree = "<group>";
+		};
+		D5D0F42B1A3E096200665D3B /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F42C1A3E096200665D3B /* Recast.h */,
+				D5D0F42D1A3E096200665D3B /* RecastAlloc.h */,
+				D5D0F42E1A3E096200665D3B /* RecastAssert.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		D5D0F42F1A3E096200665D3B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0F4301A3E096200665D3B /* Recast.cpp */,
+				D5D0F4311A3E096200665D3B /* RecastAlloc.cpp */,
+				D5D0F4321A3E096200665D3B /* RecastArea.cpp */,
+				D5D0F4331A3E096200665D3B /* RecastContour.cpp */,
+				D5D0F4341A3E096200665D3B /* RecastFilter.cpp */,
+				D5D0F4351A3E096200665D3B /* RecastLayers.cpp */,
+				D5D0F4361A3E096200665D3B /* RecastMesh.cpp */,
+				D5D0F4371A3E096200665D3B /* RecastMeshDetail.cpp */,
+				D5D0F4381A3E096200665D3B /* RecastRasterization.cpp */,
+				D5D0F4391A3E096200665D3B /* RecastRegion.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5D0F43A1A3E098500665D3B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF0DD21A3E59040059E3FA /* DetourTileCache */,
+				D5CF0DC31A3E58170059E3FA /* DebugUtils */,
+				D5D0F42A1A3E096200665D3B /* Recast */,
+				D5D0F41B1A3E095500665D3B /* DetourCrowd */,
+				D5D0F4091A3E094B00665D3B /* Detour */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,8 +333,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CF0DD91A3E59040059E3FA /* DetourTileCache.h in Headers */,
 				D5D0F4081A3E040400665D3B /* RNNMesh.h in Headers */,
+				D5CF0DDA1A3E59040059E3FA /* DetourTileCacheBuilder.h in Headers */,
 				D5D0F4041A3DFD3A00665D3B /* RNNNavigationWorld.h in Headers */,
+				D5D0F44E1A3E4C8100665D3B /* RNNPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +397,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CF0DCE1A3E58260059E3FA /* DebugDraw.cpp in Sources */,
+				D5CF0DCF1A3E58260059E3FA /* DetourDebugDraw.cpp in Sources */,
+				D5CF0DD01A3E58260059E3FA /* RecastDebugDraw.cpp in Sources */,
+				D5CF0DD11A3E58260059E3FA /* RecastDump.cpp in Sources */,
+				D5D0F4451A3E3E3800665D3B /* DetourAlloc.cpp in Sources */,
+				D5D0F4461A3E3E3800665D3B /* DetourCommon.cpp in Sources */,
+				D5D0F4471A3E3E3800665D3B /* DetourNavMesh.cpp in Sources */,
+				D5D0F4481A3E3E3800665D3B /* DetourNavMeshBuilder.cpp in Sources */,
+				D5D0F4491A3E3E3800665D3B /* DetourNavMeshQuery.cpp in Sources */,
+				D5D0F44A1A3E3E3800665D3B /* DetourNode.cpp in Sources */,
+				D5D0F43B1A3E3E2E00665D3B /* Recast.cpp in Sources */,
+				D5D0F43C1A3E3E2E00665D3B /* RecastAlloc.cpp in Sources */,
+				D5D0F43D1A3E3E2E00665D3B /* RecastArea.cpp in Sources */,
+				D5D0F43E1A3E3E2E00665D3B /* RecastContour.cpp in Sources */,
+				D5D0F43F1A3E3E2E00665D3B /* RecastFilter.cpp in Sources */,
+				D5D0F4401A3E3E2E00665D3B /* RecastLayers.cpp in Sources */,
+				D5D0F4411A3E3E2E00665D3B /* RecastMesh.cpp in Sources */,
+				D5CF0DDB1A3E59040059E3FA /* DetourTileCache.cpp in Sources */,
+				D5D0F4421A3E3E2E00665D3B /* RecastMeshDetail.cpp in Sources */,
+				D5D0F4431A3E3E2E00665D3B /* RecastRasterization.cpp in Sources */,
+				D5D0F4441A3E3E2E00665D3B /* RecastRegion.cpp in Sources */,
 				D5D0F4031A3DFD3A00665D3B /* RNNNavigationWorld.cpp in Sources */,
 				D5D0F4071A3E040400665D3B /* RNNMesh.cpp in Sources */,
+				D5CF0DDC1A3E59040059E3FA /* DetourTileCacheBuilder.cpp in Sources */,
+				D5D0F44D1A3E4C8100665D3B /* RNNPath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +549,7 @@
 				D5D0F3FF1A3DFCEA00665D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
